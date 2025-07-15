@@ -66,6 +66,10 @@ input {
 
 /* rsponsive nave start */
 @media screen and (max-width:576px) {
+    body {
+        background-color: rgb(102, 141, 128);
+    }
+
     .nav-h1 {
         font-size: 20px;
         margin-top: 7px;

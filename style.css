@@ -70,13 +70,17 @@ input {
         font-size: 20px;
         margin-top: 7px;
     }
-    .list ul{
-        gap: 10px;
+
+    .list ul {
+        gap: 30px;
     }
 
-        .btn,
-        input {
-            padding: 8px 15px;
+    .btn,
+    input {
+        display: none;
+    }
+
+    /* padding: 8px 15px;
             border-radius: 5px;
             border: none;
             margin-top: 0px;
@@ -84,5 +88,5 @@ input {
         }
         input{
             width: 100px;
-        }
+        } */
 }

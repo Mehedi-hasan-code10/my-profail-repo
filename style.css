@@ -17,7 +17,7 @@ body {
 
 /* nav start here */
 nav {
-    max-width: 1920px;
+    width: 100%;
     height: 70px;
     border: 1px solid red;
     background-color: var(--main-color);
@@ -29,326 +29,60 @@ nav {
     margin-top: 10px;
 }
 
+.list {
+    margin-top: 10px;
+}
+
+.list ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+}
+
+.list ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav-sec {
+    margin-top: 10px;
+}
+
+.btn,
 input {
     padding: 10px 20px;
-    width: 400px;
-    margin-right: -10px;
-    margin-top: 10px;
     border-radius: 5px;
     border: none;
 
 }
 
 .btn {
-
-    width: 100px;
-    padding: 10px 20px;
-    margin-top: 10px;
-    margin-right: 40px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(221, 221, 98);
+    margin-left: -10px;
+    margin-right: 10px;
+    background-color: rgb(194, 194, 71);
 }
 
-.list {
-    margin-top: 10px;
-}
-
-.list ul li {
-    list-style: none;
-
-}
-
-li a {
-    text-decoration: none;
-    color: white;
-}
-
-li a:hover {
-    background-color: rgb(251, 255, 0);
-    color: black;
-    padding: 5px 10px;
-
-}
-
-.list ul {
-    display: flex;
-    gap: 80px;
-}
-
-/* nav end here */
-
-/* header section start here */
-
-header {
-    display: flex;
-    width: 1920px;
-    height: 600px;
-    justify-content: space-between;
-    border: 1px solid red;
-}
-
-.header-sec-one {
-    width: 450px;
-    height: 470px;
-
-    margin-top: 100px;
-    margin-left: 200px;
-
-
-}
-
-.header-sec-one-h1 {
-    font-size: 60px;
-    margin-top: 15px;
-}
-
-.header-sec-one-h2 {
-    font-size: 35px;
-    margin-top: 10px;
-}
-
-.header-sec-one-p {
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-.profail-img {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    margin-top: 40px;
-    margin-right: 200px;
-    box-shadow: 0 0 25px var(--main-color);
-    animation: profail 1s inherit;
-    position: relative;
-
-}
-
-@keyframes profail {
-    from {
-        top: 40px;
-    }
-
-    to {
-        top: 100px;
-    }
-}
-
-/* icon start here */
-i {
-    font-size: 3rem;
-    padding: 1rem;
-    color: var(--main-color);
-    background: transparent;
-    border: 2px solid var(--main-color);
-    border-radius: 50%;
-    gap: 10px;
-    margin: 3rem 0.5rem;
-    transition: 0.3s ease;
-}
-
-i:hover {
-    color: white;
-    background-color: var(--main-color);
-    transform: scale(1.2) translateY(-5px);
-    box-shadow: 0 0 25px var(--main-color);
-}
-
-button {
-    padding: 12px 25px;
-    margin-top: 10px;
-
-}
-
-.send {
-    margin-right: 20px;
-    border: none;
-    border-radius: 5px;
-    transition: 0.5;
-    background-image: linear-gradient(rgb(218, 105, 105), rgb(189, 68, 189));
-
-}
-
-.send:hover {
-    transform: scale(1.1);
-    background-image: linear-gradient(rgb(226, 109, 109), rgb(88, 88, 242));
-    box-shadow: 0 0 25px var(--main-color);
-}
-
-.cont {
-    border-radius: 5px;
-    border: 1px solid #b0b0b0;
-    transition: 0.5;
-
-}
-
-.cont:hover {
-    transform: scale(1.1);
-    background-image: linear-gradient(rgb(226, 109, 109), rgb(88, 88, 242));
-    box-shadow: 0 0 25px var(--main-color);
-}
-
-/* header section end */
-
-/* main sectioin start here */
-
-.main-sec-one {
-    max-width: 450px;
-    height: 400px;
-    border: 1px solid red;
-    margin-left: 200px;
-    margin-top: 10px;
-}
-
-.main-sec-one-h1 {
-    font-size: 40px;
-}
-
-.main-sec-one-p {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-/* main section end herer */
-
-
-
-/* responsive start here */
-
+/* rsponsive nave start */
 @media screen and (max-width:576px) {
-
-    /* nav start here */
-    nav {
-        max-width: 576px;
-        height: 50px;
-        border: 1px solid red;
-        background-color: var(--main-color);
-        display: flex;
-        justify-content: space-between;
-    }
-
     .nav-h1 {
-        margin-top: 10px;
+        font-size: 20px;
+        margin-top: 7px;
+    }
+    .list ul{
+        gap: 10px;
     }
 
-    input {
-        padding: 10px 20px;
-        width: 150px;
-        margin-right: -10px;
-        margin-top: 10px;
-        border-radius: 5px;
-        border: none;
-
-    }
-
-    .btn {
-
-        width: 60px;
-        padding: 10px 10px;
-        margin-top: 10px;
-        margin-right: 5px;
-        border-radius: 5px;
-        border: none;
-        background-color: rgb(221, 221, 98);
-    }
-
-    .list {
-        display: none;
-        /* margin-top: 10px; */
-    }
-
-    /* .list ul li {
-        list-style: none;
-
-    }
-
-    li a {
-        text-decoration: none;
-        color: white;
-    }
-
-    li a:hover {
-        background-color: rgb(251, 255, 0);
-        color: black;
-        padding: 5px 10px;
-
-    }
-
-    .list ul {
-        display: flex;
-        gap: 80px;
-    } */
-
-    /* nav end here */
-}
-
-@media screen and (min-width:577px) and (max-width:992px) {
-
-    body{
-        background-color: violet;
-    }
-    /* nav start here */
-    nav {
-        max-width: 992px;
-        height: 50px;
-        border: 1px solid red;
-        background-color: var(--main-color);
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav-h1 {
-        margin-top: 10px;
-    }
-
-    input {
-        padding: 10px 10px;
-        width: 100px;
-        margin-right: -10px;
-        margin-top: 10px;
-        border-radius: 5px;
-        border: none;
-
-    }
-
-    .btn {
-
-        width: 80px;
-        padding: 10px 10px;
-        margin-top: 10px;
-        margin-right: 10px;
-        border-radius: 5px;
-        border: none;
-        background-color: rgb(221, 221, 98);
-    }
-
-    .list {
-        margin-top: 10px;
-        margin-right: 100px;
-    }
-
-    .list ul li {
-        list-style: none;
-
-    }
-
-    li a {
-        text-decoration: none;
-        color: white;
-    }
-
-    li a:hover {
-        background-color: rgb(251, 255, 0);
-        color: black;
-        padding: 5px 10px;
-
-    }
-
-    .list ul {
-        display: flex;
-        gap: 30px;
-    }
-
-    /* nav end here */
+        .btn,
+        input {
+            padding: 8px 15px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 0px;
+    
+        }
+        input{
+            width: 100px;
+        }
 }

@@ -67,7 +67,7 @@ input {
 /* rsponsive nave start */
 @media screen and (max-width:576px) {
     body {
-        background-color: rgb(102, 141, 128);
+        background-color: rgb(163, 95, 184);
     }
 
     .nav-h1 {
@@ -75,8 +75,12 @@ input {
         margin-top: 7px;
     }
 
+    .list {
+        margin-left: 5px;
+    }
+
     .list ul {
-        gap: 30px;
+        gap: 17px;
     }
 
     .btn,

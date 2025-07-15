@@ -211,3 +211,144 @@ button {
 }
 
 /* main section end herer */
+
+
+
+/* responsive start here */
+
+@media screen and (max-width:576px) {
+
+    /* nav start here */
+    nav {
+        max-width: 576px;
+        height: 50px;
+        border: 1px solid red;
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-h1 {
+        margin-top: 10px;
+    }
+
+    input {
+        padding: 10px 20px;
+        width: 150px;
+        margin-right: -10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+
+    }
+
+    .btn {
+
+        width: 60px;
+        padding: 10px 10px;
+        margin-top: 10px;
+        margin-right: 5px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(221, 221, 98);
+    }
+
+    .list {
+        display: none;
+        /* margin-top: 10px; */
+    }
+
+    /* .list ul li {
+        list-style: none;
+
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li a:hover {
+        background-color: rgb(251, 255, 0);
+        color: black;
+        padding: 5px 10px;
+
+    }
+
+    .list ul {
+        display: flex;
+        gap: 80px;
+    } */
+
+    /* nav end here */
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    body{
+        background-color: violet;
+    }
+    /* nav start here */
+    nav {
+        max-width: 992px;
+        height: 50px;
+        border: 1px solid red;
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-h1 {
+        margin-top: 10px;
+    }
+
+    input {
+        padding: 10px 10px;
+        width: 100px;
+        margin-right: -10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+
+    }
+
+    .btn {
+
+        width: 80px;
+        padding: 10px 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(221, 221, 98);
+    }
+
+    .list {
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+
+    .list ul li {
+        list-style: none;
+
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li a:hover {
+        background-color: rgb(251, 255, 0);
+        color: black;
+        padding: 5px 10px;
+
+    }
+
+    .list ul {
+        display: flex;
+        gap: 30px;
+    }
+
+    /* nav end here */
+}

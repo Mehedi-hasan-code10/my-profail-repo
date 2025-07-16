@@ -9,10 +9,10 @@
 }
 
 body {
-    max-width: 1920px;
+    max-width:100%;
     color: rgb(9, 0, 0);
     border: 1px solid rgb(222, 217, 217);
-    background-color: white;
+    background-color: rgb(153, 148, 76);
 }
 
 /* nav start here */
@@ -36,7 +36,7 @@ nav {
 .list ul {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 70px;
     list-style: none;
 }
 
@@ -64,7 +64,7 @@ input {
     background-color: rgb(194, 194, 71);
 }
 
-/* rsponsive nave start */
+/*nav rsponsive nave start */
 @media screen and (max-width:576px) {
     body {
         background-color: rgb(163, 95, 184);
@@ -87,14 +87,216 @@ input {
     input {
         display: none;
     }
+}
 
-    /* padding: 8px 15px;
-            border-radius: 5px;
-            border: none;
-            margin-top: 0px;
+@media screen and (min-width:577px) and (max-width:992px) {
+    body {
+        background-color: rgb(78, 65, 65);
+    }
+
+    .nav-h1 {
+        font-size: 30px;
+        margin-top: 7px;
+    }
+
+    .list {
+        margin-left: 5px;
+    }
+
+    .list ul {
+        gap: 40px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    input {
+        width: 120px;
+        margin-right: 20px;
+    }
+}
+/* nav responsive end here */
+
+/* header start here */
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-sec-1{
+    width: 600px;
+    height: 500px;
+    border: 1px solid red;
+    margin-top: 100px;
     
+}
+
+.header-h1{
+font-size: 60px;
+margin-bottom: 10px;
+}
+.profail-img{
+    margin-top: 100px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+}
+.header-h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.header-sec-p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* icon start here */
+i {
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--main-color);
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    gap: 10px;
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+}
+
+i:hover {
+    color: white;
+    background-color: var(--main-color);
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+button {
+    padding: 20px 40px;
+    margin-top: 5px;
+    font-size: 20px;
+
+}
+
+.send {
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5;
+    background-image: linear-gradient(rgb(218, 105, 105), rgb(189, 68, 189));
+
+}
+
+.send:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(rgb(226, 109, 109), rgb(88, 88, 242));
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.cont {
+    border-radius: 5px;
+    border: 1px solid #b0b0b0;
+    transition: 0.5;
+    margin-left: 20px;
+
+}
+
+.cont:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(rgb(226, 109, 109), rgb(88, 88, 242));
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+@media screen and (max-width:576px){
+    .header {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            flex-direction: column-reverse;
         }
-        input{
-            width: 100px;
-        } */
+
+        
+    .header-sec-1 {
+                    width: 500px;
+                    height: 280px;
+                    border: 1px solid red;
+                    margin-top: 20px;
+        
+       }
+           .header-h1 {
+               font-size: 30px;
+               margin-bottom: 10px;
+           }
+    
+           .profail-img {
+               margin-top: 30px;
+               width: 300px;
+               height: 300px;
+               border-radius: 50%;
+           }
+    
+           .header-h2 {
+               font-size: 20px;
+               margin-bottom: 10px;
+           }
+    
+           .header-sec-p {
+               font-size: 15px;
+               margin-top: 10px;
+           }
+     i {
+                      font-size: 1.4rem;
+                       padding: 0.7rem;
+                       color: var(--main-color);
+                       background: transparent;
+                       border: 2px solid var(--main-color);
+                       border-radius: 50%;
+                       gap: 10px;
+                       margin: 1rem 0.3rem;
+                       transition: 0.3s ease;
+              }
+        
+                   i:hover {
+                       color: white;
+                       background-color: var(--main-color);
+                       transform: scale(1.2) translateY(-5px);
+                       box-shadow: 0 0 25px var(--main-color);
+                   }
+
+           button {
+               padding: 10px 20px;
+               margin-top: 5px;
+               font-size: 15px;
+    
+           }
+    
+           .send {
+               margin-left: 5px;
+               border: none;
+               border-radius: 5px;
+               transition: 0.5;
+               background-image: linear-gradient(rgb(218, 105, 105), rgb(189, 68, 189));
+    
+           }
+    
+           .send:hover {
+               transform: scale(1.1);
+               background-image: linear-gradient(rgb(226, 109, 109), rgb(88, 88, 242));
+               box-shadow: 0 0 25px var(--main-color);
+           }
+    
+           .cont {
+               border-radius: 5px;
+               border: 1px solid #b0b0b0;
+               transition: 0.5;
+               margin-left: 10px;
+    
+           }
+    
+           .cont:hover {
+               transform: scale(1.1);
+               background-image: linear-gradient(rgb(226, 109, 109), rgb(88, 88, 242));
+               box-shadow: 0 0 25px var(--main-color);
+           }
 }

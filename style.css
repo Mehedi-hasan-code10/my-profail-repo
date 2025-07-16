@@ -51,7 +51,7 @@ nav {
 }
 
 .btn,
-input {
+.nav-input {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -84,8 +84,7 @@ input {
         gap: 17px;
     }
 
-    .btn,
-    input {
+    .btn,.nav-input {
         display: none;
     }
 }
@@ -647,7 +646,7 @@ i:hover {
     width: 100%;
     border: 1px solid red;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .footer-sec-1-div{
     border: 1px solid blue;
@@ -655,16 +654,20 @@ i:hover {
 }
 
 .footer-form{
-    width: auto;
+    width: 400px;
+    border: 1px solid yellow;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    margin-right: 100px;
+    margin-right: 0px;
     /* background-color: rgba(247, 247, 247, 0.781);
         box-shadow: inset -5px -5px -5px -5px rgba(0, 0, 0, 0.5);
         border-radius: 25px; */
 }
 input{
     padding: 20px 45px;
+    border-radius: 5px;
+    border: none;
 }
 label{
     margin-top: 15px;
@@ -676,4 +679,72 @@ label{
     font-size: 20px;
     border-radius: 5px;
     border: none;
+}
+
+.footer-h1{
+    font-size: 70px;
+}
+
+@media screen and (max-width:576px){
+    .footer-sec-1 {
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+        }
+                .footer-sec-1-div {
+                    border: 1px solid blue;
+                    width: 300px;
+        
+                }
+        
+                .footer-form {
+                    width: 300px;
+                    border: 1px solid yellow;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    margin-top: 20px;
+                    /* background-color: rgba(247, 247, 247, 0.781);
+                box-shadow: inset -5px -5px -5px -5px rgba(0, 0, 0, 0.5);
+                border-radius: 25px; */
+                }
+        
+                input {
+                    padding: 20px 45px;
+                    border-radius: 5px;
+                    border: none;
+                }
+        
+                label {
+                    margin-top: 15px;
+                }
+        
+                .form-btn {
+                    height: 40px;
+                    margin-top: 10px;
+                    background-color: rgb(60, 60, 230);
+                    font-size: 20px;
+                    border-radius: 5px;
+                    border: none;
+                }
+        
+                .footer-h1 {
+                    font-size: 20px;
+                }
+}
+
+@media screen and (min-width:577px) and (max-width:992px){
+    .footer-h1 {
+            font-size: 30px;
+        }
+                .footer-sec-1-div {
+                    border: 1px solid blue;
+                    width: 350px;
+                    margin-top: 30px;
+        
+                }
 }

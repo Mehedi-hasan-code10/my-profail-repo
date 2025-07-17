@@ -19,7 +19,7 @@ body {
 nav {
     width: 100%;
     height: 70px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: var(--main-color);
     display: flex;
     justify-content: space-between;
@@ -43,6 +43,7 @@ nav {
 .list ul li a {
     color: white;
     text-decoration: none;
+    /* font-size: 20px; */
 
 }
 
@@ -127,7 +128,7 @@ nav {
 .header-sec-1{
     width: 600px;
     height: 500px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 100px;
     
 }
@@ -222,7 +223,7 @@ i:hover {
     .header-sec-1 {
                     width: 300px;
                     height: 280px;
-                    border: 1px solid red;
+                    /* border: 1px solid red; */
                     margin-top: 20px;
         
        }
@@ -317,7 +318,7 @@ i:hover {
     .header-sec-1 {
         width: 500px;
         height: 280px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-top: 20px;
 
     }
@@ -411,7 +412,7 @@ i:hover {
 .main-sec{
     width: 400px;
     
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 .main-sec-h1{
@@ -441,7 +442,7 @@ i:hover {
         }
 .main-sec {
     width: 300px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 0px;
 
 }
@@ -485,13 +486,14 @@ i:hover {
 /* main-2 start here */
 
 .main-2{
-    width: 70%;
+    width: 90%;
     height: 400px;
     margin: 10px auto;
     display: grid;
+    gap: 20px;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .skill-card{
@@ -501,7 +503,7 @@ i:hover {
     border-radius: 10px;
     background-color: var(--main-color);
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 .skill-img{
@@ -542,7 +544,7 @@ i:hover {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
 
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
     }
 
     .skill-card {
@@ -552,7 +554,7 @@ i:hover {
         border-radius: 10px;
         background-color: var(--main-color);
         justify-content: space-between;
-        border: 1px solid red;
+        /* border: 1px solid red; */
 
     }
 
@@ -595,7 +597,7 @@ i:hover {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
         }
     
         .skill-card {
@@ -605,7 +607,7 @@ i:hover {
             border-radius: 10px;
             background-color: var(--main-color);
             justify-content: space-between;
-            border: 1px solid red;
+            /* border: 1px solid red; */
     
         }
     
@@ -644,18 +646,18 @@ i:hover {
 /* footer start here */
 .footer-sec-1{
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
 }
 .footer-sec-1-div{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 
 }
 
 .footer-form{
     width: 400px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -663,6 +665,9 @@ i:hover {
     /* background-color: rgba(247, 247, 247, 0.781);
         box-shadow: inset -5px -5px -5px -5px rgba(0, 0, 0, 0.5);
         border-radius: 25px; */
+}
+.form-h1{
+    text-align: center;
 }
 input{
     padding: 20px 45px;
@@ -688,7 +693,7 @@ label{
 @media screen and (max-width:576px){
     .footer-sec-1 {
             width: 100%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -696,14 +701,14 @@ label{
             align-items: center;
         }
                 .footer-sec-1-div {
-                    border: 1px solid blue;
+                    /* border: 1px solid blue; */
                     width: 300px;
         
                 }
         
                 .footer-form {
                     width: 300px;
-                    border: 1px solid yellow;
+                    /* border: 1px solid yellow; */
                     display: flex;
                     justify-content: space-around;
                     flex-direction: column;
@@ -725,6 +730,7 @@ label{
         
                 .form-btn {
                     height: 40px;
+                    
                     margin-top: 10px;
                     background-color: rgb(60, 60, 230);
                     font-size: 20px;
@@ -742,9 +748,146 @@ label{
             font-size: 30px;
         }
                 .footer-sec-1-div {
-                    border: 1px solid blue;
+                    /* border: 1px solid blue; */
                     width: 350px;
                     margin-top: 30px;
         
                 }
+                                 input {
+                                     padding: 20px 0px;
+                                     border-radius: 5px;
+                                     border: none;
+                                     width: 350px;
+                                 }
+                .footer-form{
+                    width: 350px;
+                    
+                }
+                                
+                                 
+}
+
+/* footer section 2 start here */
+
+.footer-sec-2{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    background-color: var(--sec-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-footer{
+    text-align: center;
+}
+
+.icon {
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--main-color);
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    gap: 10px;
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+}
+
+.icon:hover {
+    color: white;
+    background-color: var(--main-color);
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.list-footer ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+.list-footer ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-input{
+    padding: 20px 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+
+}
+.footer-btn{
+    background-color: rgb(231, 35, 35);
+    margin-left: -10px;
+    padding: 20px 40px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border: none;
+        
+}
+
+/* footer responsive start */
+@media screen and (max-width:576px){
+    .footer-sec-2{
+        height: auto;
+    }
+    .list-footer ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+    
+        }
+    
+        .list-footer ul li a {
+            color: white;
+            text-decoration: none;
+    
+        }
+                .footer-input {
+                    padding: 10px 15px;
+                    margin-top: 20px;
+                    border-radius: 5px;
+                    /* border: none; */
+        
+                }
+        
+                .footer-btn {
+                    background-color: rgb(211, 38, 38);
+                    margin-left: 0px;
+                    padding: 10px 15px;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    
+                    border: none;
+        
+                }
+
+}
+@media screen and (min-width:577px) and (max-width:992px){
+
+.footer-input {
+        padding: 10px 15px;
+        margin-top: 20px;
+        border-radius: 5px;
+        /* border: none; */
+
+    }
+    .footer-btn {
+        background-color: rgb(211, 38, 38);
+        margin-left: -20px;
+        padding: 10px 15px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+        border: none;
+
+    }
 }
